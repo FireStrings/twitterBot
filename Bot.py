@@ -60,6 +60,7 @@ class Bot():
 
     def reply(self, content, tweetId, user):
         self.api.update_status("@"+user+ " " + content, in_reply_to_status_id=tweetId)
+        
 
     def getTweetByID(self, _id):
         try:
